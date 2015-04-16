@@ -85,7 +85,7 @@ double coord_2d_area_triangle(const coord_2d_t* a, const coord_2d_t* b, const co
         DEBUG(__FILE__, __LINE__, __func__, "'c' must not be NULL");
         return;
     }
-    return fabs(((a->x*b->y*c->y) + (b->x*a->y*c->y) + (c->x*a->y*b->y))/2);
+    return fabs(((a->x*(b->y-c->y)) + (b->x*(a->y-c->y)) + (c->x*(a->y-b->y)))/2);
     
    }
 
