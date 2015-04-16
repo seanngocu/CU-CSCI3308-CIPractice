@@ -25,6 +25,7 @@ geometry.o: geometry.c geometry.h
 	$(CC) $(CFLAGS) $< -o $@
 
 test: geometry_test
+	./geometry_test
 	
 
 dep:
