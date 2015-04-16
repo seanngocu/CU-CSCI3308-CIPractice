@@ -4,3 +4,6 @@ compiler:
   - clang
 # Change this to your needs
 script: make test
+
+dep:
+	sudo apt-get install check
