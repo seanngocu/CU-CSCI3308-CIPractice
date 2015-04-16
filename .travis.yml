@@ -4,5 +4,5 @@ compiler:
   - gcc
   - clang
 # Change this to your needs
-script: make dep && test
+script: make dep && make test
 
