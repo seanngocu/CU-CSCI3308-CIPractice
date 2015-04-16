@@ -1,8 +1,7 @@
-sudo: required
 language: c
 compiler:
   - gcc
   - clang
 # Change this to your needs
 script: make dep && make test
-
+sudo: required
